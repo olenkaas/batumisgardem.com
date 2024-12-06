@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Послуги - Ботанічний сад Батумі</title>
+   <link href="backstyle.css" rel="stylesheet" type="text/css">
+	
+	
+</head>
+
+<body>
+    
+
+    <!-- Основний контент -->
+    <main>
+        <h1>Наші послуги</h1>
+        <p>Ботанічний сад Батумі пропонує широкий спектр послуг для відвідувачів.</p>
+
+        <!-- Список послуг -->
+        <section>
+            <h2>Перелік послуг</h2>
+            <ul>
+                <li>Екскурсії</li>
+                <li>Організація весілля</li>
+                <li>Організація освітніх подій</li>
+            </ul>
+        </section>
+
+        <!-- Таблиця з детальною інформацією -->
+        <section>
+            <h2>Деталі послуг</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Послуга</th>
+                        <th>Опис</th>
+                        <th>Ціна (₾)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Екскурсії</td>
+                        <td>Індивідуальні та групові тури з гідом</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Весільна церемонія</td>
+                        <td>Організація,аренда приміщення</td>
+                        <td>Від 500</td>
+                    </tr>
+                    <tr>
+                        <td>Освітні події</td>
+                        <td>Лекції та майстер-класи для дітей та дорослих</td>
+                        <td>50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Галерея -->
+        <section>
+            <h2>Галерея</h2>
+            <div>
+                <img src="рисунки/7.jpg" alt="Екскурсія в ботанічному саду" width="300">
+                 <figcaption>Екскурсія в ботанічному саду</figcaption>
+				<img src="рисунки/8.jpg" alt="Весільня бесідка" width="300">
+                <figcaption>Весільня бесідка</figcaption>
+				<img src="рисунки/9.jpg" alt="Освітній захід" width="300">
+           <figcaption>Освітній захід</figcaption>
+		   </div>
+        </section>
+
+        <!-- Форма замовлення послуг -->
+        <section>
+            <h2>Замовити послугу</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Ваше ім'я:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Електронна пошта:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="service">Оберіть послугу:</label><br>
+                <select id="service" name="service" required>
+                    <option value="excursion">Екскурсія</option>
+                    <option value="souvenir">Весілля</option>
+                    <option value="event">Освітній захід</option>
+                </select><br><br>
+
+                <label for="date">Дата:</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+
+                <label for="message">Додаткові коментарі:</label><br>
+                <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+                <button type="submit">Замовити</button>
+            </form>
+        </section>
+
+        <!-- Карта -->
+        <section>
+            <h2>Як нас знайти</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14787.629131305548!2d41.65624523955032!3d41.64316836540913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405d08e9d3ba98d7%3A0x0!2z0J7QuNC80L7QvdCw0Y8!5e0!3m2!1sen!2s!4v1618834916071!5m2!1sen!2s"
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <p>&copy; 2024 Ботанічний сад Батумі. Усі права захищені.</p>
+    </footer>
+</body>
+
+</html>
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - Батумський ботанічний сад</title>
+    <!-- Підключення Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Додаткові стилі */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Чорний фон */
+            color: #fff; /* Білий текст */
+        }
+        header {
+            background: #006400; /* Темно-зелений */
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+        footer {
+            background: #333; /* Темно-сірий */
+            padding: 20px 0;
+            color: white;
+            text-align: center;
+        }
+        .contact-section {
+            padding: 40px 20px;
+            background: #121212; /* Чорний відтінок */
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 255, 0, 0.3); /* Зелена тінь */
+        }
+        .btn-custom {
+            background-color: #4CAF50; /* Зелений */
+            color: white;
+            border: none;
+            transition: 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #45a049; /* Світліший зелений */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Контакти</h1>
+        <p>Зв’яжіться з нами для додаткової інформації або запитів</p>
+    </header>
+
+    <div class="container my-5">
+        <!-- Контактна секція -->
+        <div class="row contact-section">
+            <div class="col-md-6">
+                <h2>Наші контакти</h2>
+                <p><strong>Телефон:</strong> +995 123 456 789</p>
+                <p><strong>Email:</strong> info@batumibotanicalgarden.ge</p>
+                <p><strong>Адреса:</strong> Батумський ботанічний сад, Мцване Концхі, Батумі, Грузія</p>
+                <p><strong>Графік роботи:</strong> <br>
+                    Понеділок – П'ятниця: 9:00 – 18:00 <br>
+                    Субота – Неділя: 10:00 – 19:00
+                </p>
+                <div class="mt-3">
+                    <a href="https://www.facebook.com" class="btn btn-custom me-2" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com" class="btn btn-custom me-2" target="_blank">Instagram</a>
+                    <a href="https://twitter.com" class="btn btn-custom" target="_blank">Twitter</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Надішліть нам повідомлення</h2>
+                <!-- Форма -->
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Ваше ім'я</label>
+                        <input type="text" class="form-control" id="name" placeholder="Введіть ваше ім'я">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Введіть ваш email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Повідомлення</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Введіть ваше повідомлення"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-custom w-100">Надіслати</button>
+                </form>
+            </div>
+        </div>
+
+        
+    <footer>
+        <p>© 2024 Батумський ботанічний сад. Усі права захищені.</p>
+    </footer>
+
+   
+</body>
+</html>
+
